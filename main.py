@@ -270,7 +270,7 @@ class Character:
         # Creating collision
         current_state = determine_state()
         for tile in current_state[0]:
-            if tile[2] == 3:
+            if tile[2] == 1:
                 if tile[1].colliderect(self.rect.x, self.rect.y + self.dy, 40, 40):
                     if self.dy < 0:
                         self.dy = tile[1].bottom - self.rect.top
